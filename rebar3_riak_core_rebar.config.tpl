@@ -4,11 +4,16 @@
     {pbkdf2, {git, "git://github.com/marianoguerra/erlang-pbkdf2-no-history", {branch, "master"}}},
     {exometer_core, {git, "git://github.com/basho/exometer_core.git", {branch, "th/correct-dependencies"}}},
     {riak_core, {git, "git://github.com/basho/riak_core", {branch, "develop"}}},
-    {lager, {git, "git://github.com/basho/lager.git", {tag, "3.2.4"}}} 
+    {lager, {git, "git://github.com/basho/lager.git", {branch, "master"}}},
+    {cowboy, {git, "git://github.com/ninenines/cowboy.git", {branch, "master"}}},
+    {jsx, {git, "git://github.com/talentdeficit/jsx.git", {branch, "master"}}}    
 ]}.
 
 {relx, [{release, { {{ name }} , "0.1.0"},
          [{{ name }},
+          cowboy,
+          jsx,
+          riak_core,
           cuttlefish,
           sasl]},
 

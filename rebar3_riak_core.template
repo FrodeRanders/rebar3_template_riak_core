@@ -1,4 +1,4 @@
-{description, "Rebar3 Riak Core Application"}.
+{description, "Rebar3 Riak Core Application With REST API"}.
 {variables, [
     {name, "myrcore", "Name of the application"},
     {desc, "A Riak Core Application", "Short description of the app"}
@@ -10,6 +10,8 @@
 {template, "rebar3_riak_core_sup.erl.tpl", "{{name}}/apps/{{name}}/src/{{name}}_sup.erl"}.
 {template, "rebar3_riak_core_console.erl.tpl", "{{name}}/apps/{{name}}/src/{{name}}_console.erl"}.
 {template, "rebar3_riak_core_vnode.erl.tpl", "{{name}}/apps/{{name}}/src/{{name}}_vnode.erl"}.
+{template, "rebar3_riak_core_http_ping.erl.tpl", "{{name}}/apps/{{name}}/src/{{name}}_http_ping.erl"}.
+{template, "rebar3_riak_core_json.erl.tpl", "{{name}}/apps/{{name}}/src/{{name}}_json.erl"}.
 {template, "rebar3_riak_core_rebar.config.tpl", "{{name}}/rebar.config"}.
 {template, "rebar3_riak_core_editorconfig.tpl", "{{name}}/.editorconfig"}.
 {template, "rebar3_riak_core_gitignore.tpl", "{{name}}/.gitignore"}.
